@@ -1,0 +1,13 @@
+Colors:
+#19414b
+#cdb9a0
+#f0ebe1
+
+Fonts:
+URW DIN Con Black
+URW DIN Regular
+link: <link rel="stylesheet" href="https://use.typekit.net/iyhlvoa.css">
+
+Instructions:
+Bestätigungsmail an Absender
+Wöchentliche Liste an c.keller@gfeller-treuhand.ch
