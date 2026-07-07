@@ -1,6 +1,6 @@
 @props(['title' => null, 'description' => null])
 @php
-	$metaTitle = $title ?? 'Kolbareal Affoltern – Mein Zuhause';
+	$metaTitle = $title ?? 'Im Waldacher – Wohnungen mit Charakter';
 	$metaDescription = $description ?? 'Erstbezug voraussichtlich Herbst 2027: 29 moderne und grosszügige Mietwohnungen mit 1 bis 5.5 Zimmern an der Alten Mühlackerstrasse in Zürich-Affoltern.';
 	$metaImage = url('/images/imwaldacher-og.jpg');
 @endphp
@@ -18,12 +18,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <meta name="apple-mobile-web-app-title" content="Im Waldacher" />
 <link rel="manifest" href="/site.webmanifest" />
-
-{{-- Fonts: URW DIN via Adobe Fonts (Typekit) --}}
 <link rel="preconnect" href="https://use.typekit.net" crossorigin>
 <link rel="stylesheet" href="https://use.typekit.net/iyh1voa.css">
-
-{{-- Open Graph --}}
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{{ config('app.name') }}">
 <meta property="og:title" content="{{ $metaTitle }}">
@@ -33,8 +29,6 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="de_CH">
-
-{{-- Twitter Card --}}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ $metaTitle }}">
 <meta name="twitter:description" content="{{ $metaDescription }}">
@@ -45,7 +39,7 @@
 @endif
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="min-h-screen bg-shell text-ink leading-[1.25] antialiased">
+<body class="min-h-screen bg-shell text-ink text-[16px] md:text-[18px] xl:text-[22px] leading-[1.25] antialiased">
 {{ $slot }}
 </body>
 </html>

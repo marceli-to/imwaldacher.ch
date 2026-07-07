@@ -7,14 +7,16 @@
 		['file' => 'imwaldacher-badezimmer', 'alt' => 'Im Waldacher Baltenswil – Badezimmer'],
 	];
 @endphp
-<header class="relative">
+<header class="relative z-10">
 	<x-slider :slides="$slides" />
-
-	<img
-		src="/images/logo.svg"
-		alt="Im Waldacher Baltenswil"
-		width="263"
-		height="70"
-		class="pointer-events-none absolute top-24 left-24 z-10 h-40 w-auto sm:left-auto sm:right-24 md:top-40 md:right-40 md:h-52"
-	>
+  <div class="absolute top-0 left-0 w-full z-50">
+    <x-layouts.section class="flex justify-end">
+      <img
+        src="/images/logo.svg"
+        alt="Im Waldacher Baltenswil"
+        width="416"
+        height="246"
+        class="block pointer-events-none w-120 md:w-180 xl:w-220 h-auto" />
+    </x-layouts.section>
+  </div>
 </header>

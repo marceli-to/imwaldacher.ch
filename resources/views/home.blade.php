@@ -1,42 +1,68 @@
 <x-layouts.app>
-	{{-- 1 — Header visual --}}
 	<x-layouts.header />
 
-	<main class="isolate">
-		{{-- 2 — Intro text --}}
-		<x-layouts.section>
-			<h1 class="text-balance text-2xl md:text-3xl font-condensed tracking-tight uppercase">
-				Kolb Areal – Mein Zuhause
-			</h1>
-			<h2 class="text-xl md:text-2xl font-bold tracking-tight uppercase mb-20 md:mb-24">
-				Erstbezug voraussichtlich Herbst 2027
-			</h2>
+	<main class="">
 
-			<div class="space-y-20 text-sm md:text-lg text-pretty max-w-prose">
-				<p>
-					An der Alte Mühlackerstrasse in Zürich-Affoltern entstehen 29 moderne und
-					grosszügig konzipierte Mietwohnungen mit 1 bis 5.5 Zimmern. Die hochwertigen
-					Wohnungen bieten zeitgemässen Wohnkomfort und attraktive Grundrisse für Singles,
-					Paare und Familien.
-				</p>
-				<p>
-					Gerne senden wir Ihnen weitere Informationen zu, sobald die Vermietung startet.
-					Bitte füllen Sie hierzu das Kontaktformular aus.
-				</p>
-			</div>
-		</x-layouts.section>
+    {{-- <x-layouts.section>
+      <h1 class="text-balance text-[32px] md:text-[48px] xl:text-[64px] font-condensed uppercase mb-20 md:mb-32 xl:mb-40 text-shell">
+        Wohnungen mit Charakter
+      </h1>
+      <div>
+        <div>
+          <h2 class="text-[22px] md:text-[30px] xl:text-[36px] font-condensed uppercase text-sage mb-6 md:mb-10">
+            Erstvermietung ab Frühling 2027
+          </h2>
+          <p>An der Bassersdorferstrasse in Baltenswil entsteht ein Ensemble aus mehreren sorgfältig gestalteten Neubauten mit insgesamt 34 Mietwohnungen sowie zwei Gewerberäumen im Erdgeschoss. Die 2.5- bis 4.5-Zimmerwohnungen verfügen über grosszügige Aussenräume und bestechen durch eine moderne, aber wohnliche Architektur.</p>
+        </div>
 
-		{{-- 3 — Contact form --}}
-		<x-layouts.section :container="false" id="kontakt" class="bg-sage">
+        <div>
+          <h2 class="text-[22px] md:text-[30px] xl:text-[36px] font-condensed uppercase text-sage mb-6 md:mb-10">
+            Interessiert geweckt?
+          </h2>
+          <p>Gerne senden wir Ihnen weitere Informationen, sobald die Vermietung startet.<br>Bitte füllen Sie dazu das Kontaktformular aus.</p>
+        </div>
+      </div>
+    </x-layouts.section> --}}
+
+
+    <section class="relative -mt-40 md:-mt-60 xl:-mt-80 z-20">
+      <div class="mx-auto w-full max-w-6xl px-20">
+        <div class="relative pr-20 pt-20 pb-28 md:pt-32 md:pb-40 xl:pt-40 xl:pb-48 text-white">
+
+          <div class="absolute inset-y-0 right-0 left-[calc((100vw-100%)/-2)] -z-10 bg-ink"></div>
+
+          <h1 class="mb-20 md:mb-24 xl:mb-28 font-condensed text-[32px] uppercase md:text-[48px] xl:text-[64px]">
+            Wohnungen mit Charakter
+          </h1>
+
+          <div class="max-w-3xl space-y-16 md:space-y-24 xl:space-y-36">
+            <div>
+              <h2 class="mb-2 md:mb-4 xl:mb-6 font-condensed text-[22px] md:text-[30px] xl:text-[36px] uppercase text-sage">
+                Erstvermietung ab Frühling 2027
+              </h2>
+              <p>An der Bassersdorferstrasse in Baltenswil entsteht ein Ensemble aus mehreren sorgfältig gestalteten Neubauten mit insgesamt 34 Mietwohnungen sowie zwei Gewerberäumen im Erdgeschoss. Die 2.5- bis 4.5-Zimmerwohnungen verfügen über grosszügige Aussenräume und bestechen durch eine moderne, aber wohnliche Architektur.</p>
+            </div>
+
+            <div>
+              <h2 class="mb-6 font-condensed text-[22px] uppercase text-sage md:text-[30px] xl:text-[36px]">
+                Interessiert geweckt?
+              </h2>
+              <p>
+                Gerne senden wir Ihnen weitere Informationen, sobald die Vermietung startet.<br>
+                Bitte füllen Sie dazu das Kontaktformular aus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+		<x-layouts.section id="kontakt" class="pt-20 pb-28 md:pt-32 md:pb-40 xl:pt-40 xl:pb-48">
 			<livewire:contact-form />
 		</x-layouts.section>
 
-		{{-- 4 — Map --}}
-		<x-layouts.section :container="false" class="relative">
-			<div id="map" class="h-[420px] w-full bg-ink/10 md:h-[560px]"></div>
-		</x-layouts.section>
+    <div id="map" class="h-[420px] w-full bg-ink/10 md:h-[560px]"></div>
 	</main>
 
-	{{-- 5 — Footer --}}
 	<x-layouts.footer />
 </x-layouts.app>

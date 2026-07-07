@@ -97,7 +97,7 @@ new class extends Component
 	}
 }; ?>
 
-<div class="mx-auto w-full max-w-6xl px-24 py-32 md:py-64 text-white">
+<div class=" text-white">
 	@if ($submitted)
 		<div
 			class="flex flex-col gap-24"
@@ -111,16 +111,16 @@ new class extends Component
 			</p>
 		</div>
 	@else
-		<h2 class="text-xl md:text-2xl font-bold uppercase tracking-tight">
+		<h2 class="mb-20 md:mb-24 xl:mb-28 font-condensed text-ink text-[32px] md:text-[48px] xl:text-[64px] uppercase">
       Kontaktformular
     </h2>
 
 		<form wire:submit="submit" class="mt-16 flex flex-col gap-24">
 			{{-- Apartment size selection --}}
 			<fieldset>
-				<legend class="mb-16 text-lg md:text-xl font-bold">
-          Wohnungsgrösse auswählen
-        </legend>
+        <h3 class="mb-2 md:mb-4 xl:mb-6 font-condensed text-[22px] md:text-[30px] xl:text-[36px] uppercase text-ink">
+          Ich interessiere mich für (Bitte auswählen):
+        </h3>
 				<div
 					x-data
 					x-on:change="$el.querySelectorAll('input').forEach((c) => c.classList.remove('outline-2', '-outline-offset-2', 'outline-red-400'))"
