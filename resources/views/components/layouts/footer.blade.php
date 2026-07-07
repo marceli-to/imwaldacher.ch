@@ -1,7 +1,7 @@
-<footer {{ $attributes->merge(['class' => 'mx-auto w-full max-w-6xl px-20 py-20 md:py-40']) }}>
-	<div class="flex flex-col gap-20 md:grid gap-y-32 md:grid-cols-12 text-xs md:text-sm">
+<footer {{ $attributes->merge(['class' => 'mx-auto w-full max-w-6xl px-20 py-20 md:py-28 xl:py-36']) }}>
+	<div class="flex flex-col gap-20 md:grid gap-y-32 md:grid-cols-12 text-[16px] xl:text-[18px]">
 
-    <div class="flex flex-col md:flex-row md:items-end gap-20 md:gap-x-32 lg:gap-x-72 md:col-span-9">
+    <div class="md:col-span-9">
 
       <address class="not-italic flex flex-col">
         <strong>Gfeller Treuhand und Verwaltungs AG</strong>
