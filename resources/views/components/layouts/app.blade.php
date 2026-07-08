@@ -42,4 +42,11 @@
 <body class="min-h-screen bg-cream text-petrol text-xs md:text-sm xl:text-lg leading-[1.3] antialiased">
 {{ $slot }}
 </body>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DM3J8GD1XF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DM3J8GD1XF');
+</script>
 </html>

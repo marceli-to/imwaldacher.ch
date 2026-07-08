@@ -11,7 +11,9 @@
 	<x-slider :slides="$slides" />
   <div class="absolute top-0 left-0 w-full z-50">
     <x-layouts.section class="flex justify-end">
-      <x-icons.logo class="block pointer-events-none w-120 md:w-180 xl:w-220 h-auto" />
+      <a href="{{ route('home') }}" aria-label="Zur Startseite">
+        <x-icons.logo class="block pointer-events-none w-120 md:w-180 xl:w-220 h-auto" />
+      </a>
     </x-layouts.section>
   </div>
 </header>

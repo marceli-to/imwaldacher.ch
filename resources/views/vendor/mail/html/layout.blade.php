@@ -12,6 +12,10 @@
 width: 100% !important;
 }
 
+.header-inner {
+width: 100% !important;
+}
+
 .footer {
 width: 100% !important;
 }
