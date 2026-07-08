@@ -23,7 +23,6 @@
 						Stoz Werbeagentur AG<br>
 						Barzloostrasse 2<br>
 						8330 Pfäffikon ZH<br>
-						<a href="mailto:hello@stoz.ch" class="hover:underline decoration-1 underline-offset-2">hello@stoz.ch</a><br>
 						<a href="https://www.stoz.ch" target="_blank" rel="noopener" class="hover:underline decoration-1 underline-offset-2">www.stoz.ch</a>
 					</p>
 				</div>
