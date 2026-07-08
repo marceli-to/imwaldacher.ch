@@ -10,7 +10,7 @@ if (el) {
 		loop: true,
 		speed: 600,
 		autoplay: {
-			delay: 5000,
+			delay: 4000,
 			disableOnInteraction: false,
 		},
 		navigation: {
