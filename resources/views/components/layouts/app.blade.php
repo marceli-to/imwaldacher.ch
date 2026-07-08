@@ -39,7 +39,7 @@
 @endif
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="min-h-screen bg-shell text-ink text-[16px] md:text-[18px] xl:text-[20px] leading-[1.25] antialiased">
+<body class="min-h-screen bg-cream text-petrol text-xs md:text-sm xl:text-lg leading-[1.3] antialiased">
 {{ $slot }}
 </body>
 </html>

@@ -1,1 +1,1 @@
-<div id="map" class="h-[420px] w-full bg-ink/10 md:h-[560px]"></div>
+<div id="map" class="h-[420px] w-full bg-petrol/10 md:h-[560px]"></div>

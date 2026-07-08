@@ -1,26 +1,24 @@
 <x-layouts.app title="Impressum – Kolbareal Affoltern">
-	{{-- 1 — Header visual --}}
 	<x-layouts.header />
 
-	<main class="isolate">
-		{{-- 2 — Content --}}
-		<x-layouts.section>
-			<h1 class="text-balance text-2xl md:text-3xl font-bold tracking-tight uppercase mb-20 md:mb-24">
+	<main>
+		<x-layouts.section class="pt-20 pb-28 md:pt-32 md:pb-40 xl:pt-40 xl:pb-48">
+			<x-headings.h1 size="lg" class="text-balance mb-20 md:mb-24">
 				Impressum
-			</h1>
+			</x-headings.h1>
 
-			<div class="space-y-20 text-sm md:text-lg text-pretty max-w-prose">
+			<div class="space-y-20 text-xs md:text-sm xl:text-lg leading-[1.3] text-pretty max-w-prose">
 				<div class="space-y-12">
-					<h2 class="text-lg md:text-xl font-bold tracking-tight">Verantwortlich</h2>
+					<x-headings.h2 size="sm">Verantwortlich</x-headings.h2>
 					<p>
-            Kolb Immobilien AG<br>
-            Blumenfeldstrasse 85<br>
-            8046 Zürich
+            Gfeller Treuhand und Verwaltungs AG<br>
+            Bahnhofstrasse 60<br>
+            8600 Dübendorf
 					</p>
 				</div>
 
 				<div class="space-y-12">
-					<h2 class="text-lg md:text-xl font-bold tracking-tight">Design und Entwicklung</h2>
+					<x-headings.h2 size="sm">Design und Entwicklung</x-headings.h2>
 					<p>
 						Stoz Werbeagentur AG<br>
 						Barzloostrasse 2<br>
@@ -31,7 +29,7 @@
 				</div>
 
 				<div class="space-y-12">
-					<h2 class="text-lg md:text-xl font-bold tracking-tight">Programmierung</h2>
+					<x-headings.h2 size="sm">Programmierung</x-headings.h2>
 					<p>
 						Marcel Stadelmann, Zürich<br>
 						<a href="https://marceli.to" target="_blank" rel="noopener" class="hover:underline decoration-1 underline-offset-2">marceli.to</a>
@@ -40,7 +38,5 @@
 			</div>
 		</x-layouts.section>
 	</main>
-
-	{{-- 3 — Footer --}}
 	<x-layouts.footer />
 </x-layouts.app>

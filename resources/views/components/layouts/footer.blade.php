@@ -1,10 +1,10 @@
 <footer {{ $attributes->merge(['class' => 'mx-auto w-full max-w-6xl px-20 py-20 md:py-28 xl:py-36']) }}>
-	<div class="flex flex-col gap-20 md:grid gap-y-32 md:grid-cols-12 text-[16px] xl:text-[18px]">
+	<div class="flex flex-col gap-20 md:grid gap-y-32 md:grid-cols-12 text-xs xl:text-sm">
 
     <div class="md:col-span-9">
 
       <address class="not-italic flex flex-col">
-        <strong>Gfeller Treuhand und Verwaltungs AG</strong>
+        Gfeller Treuhand und Verwaltungs AG<br>
         Bahnhofstrasse 60<br>
         8600 Dübendorf<br>
         <a href="https://www.kolb-immobilien.ch" target="_blank" rel="noopener" class="hover:underline decoration-1 underline-offset-2">

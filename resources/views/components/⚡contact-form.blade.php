@@ -27,8 +27,13 @@ new class extends Component
 
 	public bool $submitted = false;
 
-	/** Apartment sizes offered, in display order. */
-	public array $sizes = ['1', '2.5', '3.5', '4.5', '5.5'];
+	/** Options offered, as value => label, in display order. */
+	public array $sizes = [
+		'2.5' => '2.5-Zimmerwohnung',
+		'3.5' => '3.5-Zimmerwohnung',
+		'4.5' => '4.5-Zimmerwohnung',
+		'gewerbe' => 'Gewerbeflächen',
+	];
 
 	/** @return array<string,mixed> */
 	protected function rules(): array
@@ -98,103 +103,79 @@ new class extends Component
 }; ?>
 
 <x-layouts.section id="kontakt" class="pt-20 pb-28 md:pt-32 md:pb-40 xl:pt-40 xl:pb-48">
-  <div class="text-white">
+  <div>
     @if ($submitted)
       <div
         class="flex flex-col gap-24"
         role="status"
         aria-live="polite">
-        <h2 class="mb-20 md:mb-24 xl:mb-28 font-condensed text-ink text-[32px] md:text-[48px] xl:text-[64px] uppercase">
+        <x-headings.h2 size="sm" class="text-petrol">
           Wir haben Ihre Anmeldung erhalten
-        </h2>
+        </x-headings.h2>
         <p class="text-pretty">
           Vielen Dank für Ihr Interesse. Wir melden uns, sobald die Vermietung startet.
         </p>
       </div>
     @else
-      <h2 class="mb-20 md:mb-24 xl:mb-28 font-condensed text-ink text-[32px] md:text-[48px] xl:text-[64px] uppercase">
+      <x-headings.h2 size="lg" class="mb-20 md:mb-24 xl:mb-28 text-petrol">
         Kontaktformular
-      </h2>
+      </x-headings.h2>
 
-      <form wire:submit="submit" class="mt-16 flex flex-col gap-24">
+      <form wire:submit="submit" class="mt-16 flex flex-col gap-20 md:gap-24">
         <fieldset>
-          <h3 class="mb-2 md:mb-4 xl:mb-6 font-condensed text-[22px] md:text-[30px] xl:text-[36px] uppercase text-ink">
-            Ich interessiere mich für (Bitte auswählen):
-          </h3>
+          <x-headings.h3 size="sm" class="mb-4 md:mb-8 xl:mb-12 text-petrol">
+            Ich interessiere mich für (Bitte auswählen)
+          </x-headings.h3>
           <div
             x-data
-            x-on:change="$el.querySelectorAll('input').forEach((c) => c.classList.remove('outline-2', '-outline-offset-2', 'outline-red-400'))"
-            class="grid grid-cols-1 gap-x-40 gap-y-12 sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-3 max-w-2xl">
-            @foreach ($sizes as $size)
-              <label for="size-{{ \Illuminate\Support\Str::slug($size) }}" class="flex cursor-pointer items-center gap-12 text-xs md:text-sm">
-                <span class="group inline-grid size-20 grid-cols-1 sm:size-16">
-                  <input
-                    id="size-{{ \Illuminate\Support\Str::slug($size) }}"
-                    type="checkbox"
-                    value="{{ $size }}"
-                    wire:model="apartment_sizes"
-                    @class([
-                      'col-start-1 row-start-1 appearance-none rounded-none border-0 bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white forced-colors:appearance-auto',
-                      'outline-2 -outline-offset-2 outline-red-400' => $errors->has('apartment_sizes'),
-                    ])>
-                  <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-7/8 self-center justify-self-center stroke-ink">
-                    <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-not-has-checked:opacity-0" />
-                  </svg>
-                </span>
-                <span>{{ $size }}-Zimmerwohnung</span>
-              </label>
+            x-on:change="$el.querySelectorAll('input').forEach((c) => { c.classList.remove('bg-red-300'); c.classList.add('bg-sand'); })"
+            class="grid grid-cols-1 gap-x-40 gap-y-8 sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-2 max-w-2xl">
+            @foreach ($sizes as $value => $label)
+              <x-form.checkbox
+                id="size-{{ \Illuminate\Support\Str::slug($value) }}"
+                value="{{ $value }}"
+                wire:model="apartment_sizes"
+                :error="$errors->has('apartment_sizes')">
+                {{ $label }}
+              </x-form.checkbox>
             @endforeach
           </div>
         </fieldset>
 
-        <div class="grid grid-cols-1 gap-x-20 gap-y-20 sm:grid-cols-2">
+        <div class="grid grid-cols-1 gap-20 md:gap-24 sm:grid-cols-2">
           <x-form.input name="first_name" label="Vorname*" wire:model="first_name" autocomplete="given-name" />
           <x-form.input name="last_name" label="Name*" wire:model="last_name" autocomplete="family-name" />
         </div>
 
-        <div class="grid grid-cols-1 gap-x-20 gap-y-20 sm:grid-cols-2">
+        <div class="grid grid-cols-1 gap-20 md:gap-24 sm:grid-cols-2">
           <x-form.input name="street" label="Strasse/Nr*" wire:model="street" autocomplete="street-address" />
           <x-form.input name="zip_city" label="PLZ/Ort*" wire:model="zip_city" autocomplete="postal-code" />
         </div>
 
-        <div class="grid grid-cols-1 gap-x-20 gap-y-20 sm:grid-cols-2">
+        <div class="grid grid-cols-1 gap-20 md:gap-24 sm:grid-cols-2">
           <x-form.input name="email" label="E-Mail*" type="email" wire:model="email" autocomplete="email" />
           <x-form.input name="phone" label="Telefon" type="tel" wire:model="phone" autocomplete="tel" />
         </div>
 
-        <label for="privacy" x-data class="flex cursor-pointer items-start gap-12 text-xs md:text-sm">
-          <span class="flex h-lh items-center text-sm">
-            <span class="group inline-grid size-20 grid-cols-1 sm:size-16">
-              <input
-                id="privacy"
-                type="checkbox"
-                name="privacy"
-                wire:model="privacy"
-                x-on:change="$el.classList.remove('outline-2', '-outline-offset-2', 'outline-red-400')"
-                @class([
-                  'col-start-1 row-start-1 appearance-none rounded-none border-0 bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white forced-colors:appearance-auto',
-                  'outline-2 -outline-offset-2 outline-red-400' => $errors->has('privacy'),
-                ])
-              >
-              <svg viewBox="0 0 14 14" fill="none" class="pointer-events-none col-start-1 row-start-1 size-7/8 self-center justify-self-center stroke-ink">
-                <path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-not-has-checked:opacity-0" />
-              </svg>
-            </span>
-          </span>
-          <span>
-            Ich habe die <a href="#" class="hover:underline decoration-1 underline-offset-2">Datenschutzerklärung</a> gelesen und akzeptiere diese.
-          </span>
-        </label>
+        <x-form.checkbox
+          id="privacy"
+          name="privacy"
+          wire:model="privacy"
+          multiline
+          x-on:change="$el.classList.remove('bg-red-300'); $el.classList.add('bg-sand')"
+          :error="$errors->has('privacy')">
+          Ich habe die <a href="#" class="hover:underline decoration-1 underline-offset-2">Datenschutzerklärung</a> gelesen und akzeptiere diese.
+        </x-form.checkbox>
 
         {{-- Cloudflare Turnstile runs invisibly (rendered after the form); only its error surfaces here --}}
         @error('turnstileToken')
-          <p class="text-xs md:text-sm underline">{{ $message }}</p>
+          <p class="underline">{{ $message }}</p>
         @enderror
 
         <div>
           <button
             type="submit"
-            class="cursor-pointer inline-flex items-center justify-center bg-white px-15 py-10 text-sm md:text-lg font-bold uppercase tracking-wide text-sage transition hover:bg-shell disabled:opacity-60"
+            class="cursor-pointer inline-flex items-center justify-center bg-petrol hover:bg-sand text-sand hover:text-petrol transition-colors px-12 py-8 font-condensed text-lg md:text-2xl xl:text-3xl uppercase tracking-wide disabled:opacity-60"
             wire:loading.attr="disabled"
             wire:target="submit">
             <span wire:loading.remove wire:target="submit">Absenden</span>

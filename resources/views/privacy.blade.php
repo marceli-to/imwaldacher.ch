@@ -1,15 +1,13 @@
 <x-layouts.app title="Datenschutz – Kolbareal Affoltern">
-	{{-- 1 — Header visual --}}
 	<x-layouts.header />
 
-	<main class="isolate">
-		{{-- 2 — Content --}}
-		<x-layouts.section>
-			<h1 class="text-balance text-2xl md:text-3xl font-bold tracking-tight uppercase mb-20 md:mb-24">
+	<main>
+		<x-layouts.section class="pt-20 pb-28 md:pt-32 md:pb-40 xl:pt-40 xl:pb-48">
+			<x-headings.h1 size="lg" class="text-balance mb-20 md:mb-24">
 				Datenschutz
-			</h1>
+			</x-headings.h1>
 
-			<div class="space-y-32 text-sm md:text-base text-pretty max-w-prose">
+			<div class="space-y-32 text-pretty max-w-4xl">
 				<p>
 					Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst.
 					Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen
@@ -17,7 +15,7 @@
 				</p>
 
 				<section class="space-y-12 mt-24">
-					<h2 class="text-lg md:text-xl font-bold tracking-tight">Cookies</h2>
+					<x-headings.h2 size="sm">Cookies</x-headings.h2>
 					<p>
 						Die Internetseiten verwenden teilweise so genannte Cookies. Cookies richten auf Ihrem
 						Rechner keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot
@@ -40,7 +38,7 @@
 				</section>
 
 				<section class="space-y-12 mt-24">
-					<h2 class="text-lg md:text-xl font-bold tracking-tight">Hosting Provider &amp; Server-LogFiles</h2>
+					<x-headings.h2 size="sm">Hosting Provider &amp; Server-LogFiles</x-headings.h2>
 					<p>
 						Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten
 						Server-Log Files, die Ihr Browser automatisch an uns übermittelt. Dies sind:
@@ -68,7 +66,7 @@
 				</section>
 
 				<section class="space-y-12 mt-24">
-					<h2 class="text-lg md:text-xl font-bold tracking-tight">Kontaktformular</h2>
+					<x-headings.h2 size="sm">Kontaktformular</x-headings.h2>
 					<p class="font-bold">Umfang, Zweck und Rechtsgrundlage der Datenverarbeitung</p>
 					<p>
 						Auf unserer Internetseite ist ein Kontaktformular vorhanden, welches für die elektronische
@@ -112,7 +110,7 @@
 				</section>
 
 				<section class="space-y-12 mt-24">
-					<h2 class="text-lg md:text-xl font-bold tracking-tight">Google Analytics</h2>
+					<x-headings.h2 size="sm">Google Analytics</x-headings.h2>
 					<p>
 						Diese Website nutzt Funktionen des Webanalysedienstes Google Analytics. Anbieter ist die
 						Google Inc., 1600 Amphitheatre Parkway Mountain View, CA 94043, USA.
@@ -170,7 +168,7 @@
 				</section>
 
 				<section class="space-y-12 mt-24">
-					<h2 class="text-lg md:text-xl font-bold tracking-tight">Google Maps</h2>
+					<x-headings.h2 size="sm">Google Maps</x-headings.h2>
 					<p class="font-bold">Umfang, Zweck und Rechtsgrundlage der Datenverarbeitung</p>
 					<p>
 						Diese Webseite verwendet Google Maps zur Nutzung von Karten und zur Erstellung von
@@ -203,7 +201,7 @@
 				</section>
 
 				<section class="space-y-12 mt-24">
-					<h2 class="text-lg md:text-xl font-bold tracking-tight">Recht auf Auskunft, Löschung, Sperrung</h2>
+					<x-headings.h2 size="sm">Recht auf Auskunft, Löschung, Sperrung</x-headings.h2>
 					<p>
 						Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten
 						personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung
@@ -216,7 +214,7 @@
 				</section>
 
 				<section class="space-y-12">
-					<h2 class="text-lg md:text-xl font-bold tracking-tight">Verwendung von Adobe Fonts</h2>
+					<x-headings.h2 size="sm">Verwendung von Adobe Fonts</x-headings.h2>
 					<p>
 						Wir verwenden auf dieser Webseite die Schriftarten von Adobe Fonts, um ein ansprechendes
 						Design und eine bessere Lesbarkeit zu gewährleisten. Adobe Fonts ist ein Dienst der Adobe
@@ -255,6 +253,5 @@
 		</x-layouts.section>
 	</main>
 
-	{{-- 3 — Footer --}}
 	<x-layouts.footer />
 </x-layouts.app>

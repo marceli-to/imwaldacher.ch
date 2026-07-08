@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import './spacing.css';
+@import './type.css';
 
 @source '../views/**/*.blade.php';
 @source '../../app/Livewire/**/*.php';
@@ -7,25 +8,12 @@
 @source '../../storage/framework/views/*.php';
 
 @theme {
-  /* Fonts — URW DIN via Adobe Fonts / Typekit (kit iyh1voa, loaded in <head>) */
-  --font-sans: 'urw-din', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';        /* URW DIN Regular — body */
-  --font-condensed: 'urw-din-condensed', var(--font-sans);  /* URW DIN Con Black (900) — headings */
-
-  /* Brand colors (from docs/info.txt + docs/screen.png) */
-  --color-ink: #19414b;        /* Petrol — dark sections, headings & body text */
-  --color-sage: #cdb9a0;       /* Sand — accents & headings on dark */
-  --color-shell: #f0ebe1;      /* Cream — page background */
+  --font-sans: 'urw-din', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-condensed: 'urw-din-condensed', var(--font-sans);
+  --color-petrol: #19414b;
+  --color-sand: #cdb9a0;
+  --color-cream: #f0ebe1;
   --color-white: #ffffff;
-
-  /* Type scale — Tailwind-style t-shirt names, no `base`.
-     Line-heights are handled globally on <body> (leading-[1.25]). */
-  --text-*: initial;
-  --text-xs: 1rem;        /* 16px */
-  --text-sm: 1.125rem;    /* 18px */
-  --text-md: 1.25rem;     /* 20px */
-  --text-lg: 1.5rem;      /* 24px */
-  --text-xl: 2rem;        /* 32px */
-  --text-2xl: 2.75rem;    /* 44px */
 }
 
 @layer components {
@@ -41,4 +29,9 @@
 
 strong {
   @apply font-condensed
+}
+
+p:not(:last-child),
+ul:not(:last-child) {
+  @apply mb-12 md:mb-16 xl:mb-20
 }
