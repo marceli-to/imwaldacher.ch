@@ -12,7 +12,7 @@ Local URL (Herd, SSL): https://kolbareal.ch.test
 - `resources/views/components/layouts/app.blade.php` — base layout
 - `resources/views/components/⚡contact-form.blade.php` — Livewire single-file contact form
 - `resources/views/components/form/input.blade.php` — shared input field
-- `resources/js/modules/map.js` — Mapbox map (Alte Mühlackerstrasse, Zürich-Affoltern)
+- `resources/js/modules/map.js` — Mapbox map (Bassersdorferstrasse 14, Baltenswil)
 - `app/Models/Registration.php` + migration — form submissions
 - `app/Console/Commands/ExportWeeklyRegistrations.php` — weekly export command
 - `app/Notifications/WeeklyRegistrationsExport.php` + `resources/views/mail/registrations-export.blade.php` — markdown email

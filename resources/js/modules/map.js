@@ -1,8 +1,8 @@
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-// Kolbareal — Alte Mühlackerstrasse, Zürich-Affoltern
-const COORDINATES = [8.506682, 47.424717]; // [lng, lat]
+// Im Waldacher — Bassersdorferstrasse 14, Baltenswil
+const COORDINATES = [8.642285336864568, 47.43003922175733]; // [lng, lat]
 
 const initMap = () => {
 	const el = document.getElementById('map');
