@@ -1,6 +1,6 @@
 @props(['title' => null, 'description' => null])
 @php
-	$metaTitle = $title ?? 'Im Waldacher – Wohnungen mit Charakter';
+	$metaTitle = $title ?? 'Im Waldacher Baltenswil – Wohnungen mit Charakter';
 	$metaDescription = $description ?? 'Erstbezug voraussichtlich Herbst 2027: 29 moderne und grosszügige Mietwohnungen mit 1 bis 5.5 Zimmern an der Alten Mühlackerstrasse in Zürich-Affoltern.';
 	$metaImage = url('/images/imwaldacher-og.jpg');
 @endphp

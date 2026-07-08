@@ -1,4 +1,4 @@
-# Kolbareal Affoltern
+# Im Waldacher Baltenswil
 
 Landing page for the *Kolbareal* residential development (Erstbezug voraussichtlich Herbst 2027) with a
 registration form. Built with **Laravel 13**, **Livewire 4**, **Tailwind CSS v4**, **Vite** and

@@ -1,4 +1,4 @@
-<x-layouts.app title="Datenschutz – Kolbareal Affoltern">
+<x-layouts.app title="Datenschutz – Im Waldacher Baltenswil – Wohnungen mit Charakter">
 	<x-layouts.header />
 
 	<main>

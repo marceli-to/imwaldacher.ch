@@ -1,7 +1,9 @@
 <?php
 
+use App\Mail\RegistrationConfirmation;
 use App\Models\Registration;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 
 new class extends Component
@@ -70,6 +72,8 @@ new class extends Component
 			'email' => $this->email,
 			'phone' => $this->phone ?: null,
 		]);
+
+		Mail::to($this->email)->send(new RegistrationConfirmation);
 
 		$this->reset([
 			'apartment_sizes', 'first_name', 'last_name',

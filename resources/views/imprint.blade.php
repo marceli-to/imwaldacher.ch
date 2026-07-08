@@ -1,4 +1,4 @@
-<x-layouts.app title="Impressum – Kolbareal Affoltern">
+<x-layouts.app title="Impressum – Im Waldacher Baltenswil – Wohnungen mit Charakter">
 	<x-layouts.header />
 
 	<main>
