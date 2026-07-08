@@ -1,10 +1,10 @@
 @php
 	$slides = [
-		['file' => 'imwaldacher-aussen',     'alt' => 'Im Waldacher Baltenswil – Aussenansicht der Überbauung'],
 		['file' => 'imwaldacher-gartenhof',  'alt' => 'Im Waldacher Baltenswil – Gartenhof'],
 		['file' => 'imwaldacher-dachwohnung', 'alt' => 'Im Waldacher Baltenswil – Wohnraum einer Dachwohnung'],
-		['file' => 'imwaldacher-wohnzimmer', 'alt' => 'Im Waldacher Baltenswil – Wohnraum mit Gartenzugang'],
-		['file' => 'imwaldacher-badezimmer', 'alt' => 'Im Waldacher Baltenswil – Badezimmer'],
+    ['file' => 'imwaldacher-badezimmer', 'alt' => 'Im Waldacher Baltenswil – Badezimmer'],
+    ['file' => 'imwaldacher-aussen',     'alt' => 'Im Waldacher Baltenswil – Aussenansicht der Überbauung'],
+    ['file' => 'imwaldacher-wohnzimmer', 'alt' => 'Im Waldacher Baltenswil – Wohnraum mit Gartenzugang'],
 	];
 @endphp
 <header class="relative z-10">

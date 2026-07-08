@@ -6,10 +6,11 @@
 			<picture>
 				<source media="(max-width: 639px)" type="image/avif" srcset="/images/{{ $slide['file'] }}-mobile.avif">
 				<source media="(max-width: 639px)" type="image/webp" srcset="/images/{{ $slide['file'] }}-mobile.webp">
+				<source media="(max-width: 639px)" type="image/jpeg" srcset="/images/{{ $slide['file'] }}-mobile.jpg">
 				<source type="image/avif" srcset="/images/{{ $slide['file'] }}.avif">
 				<source type="image/webp" srcset="/images/{{ $slide['file'] }}.webp">
 				<img
-					src="/images/{{ $slide['file'] }}.webp"
+					src="/images/{{ $slide['file'] }}.jpg"
 					alt="{{ $slide['alt'] }}"
 					width="2400"
 					height="1266"

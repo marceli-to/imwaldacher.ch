@@ -17,6 +17,11 @@
 		<nav class="md:text-right md:col-span-3 md:self-end">
 			<ul>
 				<li>
+					<a href="{{ route('disclaimer') }}" class="hover:underline decoration-1 underline-offset-2">
+						Disclaimer
+					</a>
+				</li>
+				<li>
 					<a href="{{ route('imprint') }}" class="hover:underline decoration-1 underline-offset-2">
 						Impressum
 					</a>
