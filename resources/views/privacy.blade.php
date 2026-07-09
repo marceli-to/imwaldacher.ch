@@ -1,4 +1,4 @@
-<x-layouts.app title="Datenschutz – Im Waldacher Baltenswil – Wohnungen mit Charakter">
+<x-layouts.app title="Datenschutz – Im Waldacher Baltenswil – Wohnungen mit Charakter und Gewerberäumen">
 	<x-layouts.header />
 
 	<main>

@@ -47,7 +47,7 @@ new class extends Component
 			'street' => ['required', 'string', 'max:255'],
 			'zip_city' => ['required', 'string', 'max:255'],
 			'email' => ['required', 'email', 'max:255'],
-			'phone' => ['nullable', 'string', 'max:255'],
+			'phone' => ['required', 'string', 'max:255'],
 			'privacy' => ['accepted'],
 		];
 	}
@@ -158,7 +158,7 @@ new class extends Component
 
         <div class="grid grid-cols-1 gap-20 md:gap-24 sm:grid-cols-2">
           <x-form.input name="email" label="E-Mail*" type="email" wire:model="email" autocomplete="email" />
-          <x-form.input name="phone" label="Telefon" type="tel" wire:model="phone" autocomplete="tel" />
+          <x-form.input name="phone" label="Telefon*" type="tel" wire:model="phone" autocomplete="tel" />
         </div>
 
         <x-form.checkbox

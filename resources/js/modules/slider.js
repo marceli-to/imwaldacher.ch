@@ -1,16 +1,21 @@
 import Swiper from 'swiper';
-import { Navigation, Autoplay } from 'swiper/modules';
+import { Navigation, Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/effect-fade';
 
 const el = document.querySelector('.header-swiper');
 
 if (el) {
 	new Swiper(el, {
-		modules: [Navigation, Autoplay],
+		modules: [Navigation, Autoplay, EffectFade],
 		loop: true,
-		speed: 600,
+		speed: 1200,
+		effect: 'fade',
+		fadeEffect: {
+			crossFade: true,
+		},
 		autoplay: {
-			delay: 4000,
+			delay: 5000,
 			disableOnInteraction: false,
 		},
 		navigation: {
