@@ -100,7 +100,7 @@
 					<p>
 						Sie haben jederzeit die Möglichkeit, Ihre Einwilligung zur Verarbeitung der
 						personenbezogenen Daten per E-Mail an
-						<a href="mailto:info@kolb-immobilien.ch" class="hover:underline decoration-1 underline-offset-2">info@kolb-immobilien.ch</a>
+						<a href="mailto:info@gfeller-treuhand.ch" class="hover:underline decoration-1 underline-offset-2">info@gfeller-treuhand.ch</a>
 						zu widerrufen. In einem solchen Fall kann die Konversation nicht fortgeführt werden.
 					</p>
 					<p>
@@ -208,7 +208,7 @@
 						sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu
 						weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im
 						Impressum angegebenen Adresse an uns wenden oder eine E-Mail an
-						<a href="mailto:info@kolb-immobilien.ch" class="hover:underline decoration-1 underline-offset-2">info@kolb-immobilien.ch</a>
+						<a href="mailto:info@gfeller-treuhand.ch" class="hover:underline decoration-1 underline-offset-2">info@gfeller-treuhand.ch</a>
 						senden.
 					</p>
 				</section>

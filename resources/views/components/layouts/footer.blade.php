@@ -7,7 +7,7 @@
         Gfeller Treuhand und Verwaltungs AG<br>
         Bahnhofstrasse 60<br>
         8600 Dübendorf<br>
-        <a href="https://www.kolb-immobilien.ch" target="_blank" rel="noopener" class="hover:underline decoration-1 underline-offset-2">
+        <a href="https://www.gfeller-treuhand.ch" target="_blank" rel="noopener" class="hover:underline decoration-1 underline-offset-2">
           www.gfeller-treuhand.ch
         </a>
       </address>

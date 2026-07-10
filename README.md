@@ -40,7 +40,7 @@ Set these in `.env`:
 | --- | --- |
 | `MAPBOX_TOKEN` | Mapbox GL access token (frontend, exposed via `VITE_MAPBOX_TOKEN`) |
 | `TURNSTILE_SITE_KEY` / `TURNSTILE_SECRET_KEY` | Cloudflare Turnstile spam protection |
-| `REGISTRATIONS_EXPORT_EMAIL` | Recipient of the weekly registrations email (default `info@kolb-immobilien.ch`) |
+| `REGISTRATIONS_EXPORT_EMAIL` | Recipient of the weekly registrations email (default `info@gfeller-treuhand.ch`) |
 
 Until the Mapbox token is set the map area stays blank; until the Turnstile keys are set the
 widget is hidden and the spam check is skipped — so the form is fully testable locally without keys.
