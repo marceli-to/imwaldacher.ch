@@ -1,7 +1,11 @@
 <footer {{ $attributes->merge(['class' => 'mx-auto w-full max-w-6xl px-20 py-20 md:py-28 xl:py-36']) }}>
 	<div class="flex flex-col gap-20 md:grid gap-y-32 md:grid-cols-12 text-xs xl:text-sm">
 
-    <div class="md:col-span-9">
+    <div class="md:col-span-9 flex flex-col gap-8 md:flex-row md:items-end md:gap-[31px]">
+
+      <a href="https://www.gfeller-treuhand.ch" target="_blank" rel="noopener" class="shrink-0 my-[6px] md:my-0">
+        <img src="{{ asset('images/gfeller-logo.png') }}" alt="Gfeller Treuhand und Verwaltungs AG" class="w-[160px] md:w-[200px] -translate-y-[2px]">
+      </a>
 
       <address class="not-italic flex flex-col">
         Gfeller Treuhand und Verwaltungs AG<br>
