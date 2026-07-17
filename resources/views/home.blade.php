@@ -15,9 +15,14 @@
           <div class="max-w-4xl space-y-16 md:space-y-24 xl:space-y-36">
             <div>
               <x-headings.h2 size="sm" class="text-sand">
-                Erstvermietung ab Sommer 2027
+                Erstvermietung
               </x-headings.h2>
-              <p>An der Bassersdorferstrasse in Baltenswil entsteht ein Ensemble aus mehreren sorgfältig gestalteten Neubauten mit insgesamt 34 Mietwohnungen sowie zwei Gewerberäumen im Erdgeschoss. Die 2.5- bis 4.5-Zimmerwohnungen verfügen über grosszügige Aussenräume und bestechen durch eine moderne, aber wohnliche Architektur.</p>
+              <p>An der Bassersdorferstrasse in Baltenswil entsteht ein Ensemble aus mehreren sorgfältig 
+              gestalteten Neubauten mit insgesamt 34 Mietwohnungen sowie zwei Gewerberäumen im Erdgeschoss. Die 2.5- bis 4.5-Zimmerwohnungen verfügen über grosszügige Aussenräume und bestechen durch eine moderne, aber wohnliche Architektur.</p>
+              <p class="text-sm md:text-lg xl:text-xl">
+                <strong>Etappe 1: Herbst 2027</strong><br>
+                <strong>Etappe 2: Frühling/Sommer 2028</strong>
+              </p>
             </div>
             <div>
               <x-headings.h2 size="sm" class="text-sand">
