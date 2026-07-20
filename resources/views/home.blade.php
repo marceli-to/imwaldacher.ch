@@ -20,8 +20,24 @@
               <p>An der Bassersdorferstrasse in Baltenswil entsteht ein Ensemble aus mehreren sorgfältig 
               gestalteten Neubauten mit insgesamt 34 Mietwohnungen sowie zwei Gewerberäumen im Erdgeschoss. Die 2.5- bis 4.5-Zimmerwohnungen verfügen über grosszügige Aussenräume und bestechen durch eine moderne, aber wohnliche Architektur.</p>
               <p class="text-sm md:text-lg xl:text-xl">
-                <strong>Etappe 1: Herbst 2027</strong><br>
-                <strong>Etappe 2: Frühling/Sommer 2028</strong>
+                <strong class="text-lg md:text-xl xl:text-2xl">Etappe 1: Herbst 2027</strong><br>
+                Haus Bassersdorferstrasse 14 mit:<br>
+                2 Gewerberäumen<br>
+                2.5 Zimmerwohnungen<br>
+                3.5 Zimmerwohnungen
+              </p>
+              <p class="text-sm md:text-lg xl:text-xl">
+                <strong class="text-lg md:text-xl xl:text-2xl">Etappe 2: Frühling/Sommer 2028</strong><br>
+                Haus Schienbüelstrasse 2 mit:<br>
+                2.5 Zimmerwohnung<br>
+                3.5 Zimmerwohnungen<br>
+                4.5 Zimmerwohnungen
+              </p>
+              <p class="text-sm md:text-lg xl:text-xl">
+                Haus Im Waldacher 1 mit:<br>
+                2.5 Zimmerwohnungen<br>
+                3.5 Zimmerwohnungen<br>
+                4.5 Zimmerwohnungen
               </p>
             </div>
             <div>
