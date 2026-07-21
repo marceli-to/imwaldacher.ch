@@ -1,4 +1,4 @@
-<x-layouts.app title="Impressum – Im Waldacher Baltenswil – Wohnungen mit Charakter und Gewerberäumen">
+<x-layouts.app title="Impressum – Im Waldacher Baltenswil" description="Impressum und Kontaktangaben zur Überbauung Im Waldacher in Baltenswil.">
 	<x-layouts.header />
 
 	<main>

@@ -1,4 +1,4 @@
-<x-layouts.app title="Disclaimer – Im Waldacher Baltenswil – Wohnungen mit Charakter und Gewerberäumen">
+<x-layouts.app title="Disclaimer – Im Waldacher Baltenswil" description="Haftungsausschluss und Nutzungsbedingungen der Website Im Waldacher Baltenswil.">
 	<x-layouts.header />
 
 	<main>

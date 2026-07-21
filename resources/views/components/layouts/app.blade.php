@@ -1,7 +1,7 @@
 @props(['title' => null, 'description' => null])
 @php
-	$metaTitle = $title ?? 'Im Waldacher Baltenswil – Wohnungen mit Charakter und Gewerberäumen';
-	$metaDescription = $description ?? 'Erstvermietung ab Sommer 2027: 34 moderne und grosszügige 2.5- bis 4.5-Zimmer-Mietwohnungen sowie zwei Gewerberäume an der Bassersdorferstrasse 14 in Baltenswil.';
+	$metaTitle = $title ?? 'Im Waldacher Baltenswil – Wohnen und Arbeiten mit Charakter';
+	$metaDescription = $description ?? 'Erstvermietung in Baltenswil – 34 moderne und grosszügige 2.5- bis 4.5-Zimmer-Mietwohnungen sowie zwei Gewerberäumen';
 	$metaImage = url('/images/imwaldacher-og.jpg');
 @endphp
 <!DOCTYPE html>
