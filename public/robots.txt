@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://imwaldacher.ch/sitemap.xml
+Sitemap: https://www.imwaldacher.ch/sitemap.xml
